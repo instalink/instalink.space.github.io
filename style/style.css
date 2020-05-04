@@ -1,0 +1,260 @@
+/* Main style */
+
+:root{
+  --bg-color: #F1F8FF;
+  --main-gradient: linear-gradient(0deg, rgba(225, 27, 126, 0.64), rgba(225, 27, 126, 0.64)), linear-gradient(97.12deg, #CD3FFF 0%, #FF3FD5 14.97%, #FF9141 66.1%, #FFBE41 102.63%);
+  --color-text: #000;
+  --color-accent: #3A9FE7;
+  --color-button: #fff;
+
+  --border-radius: 10px;
+  --border-radius-button: 30px;
+
+  --margin-top-main: 58px;
+  --margin-top-secondary: 23px;
+
+  --padding-main: 40px 0;
+  --padding-small: 30px 0;
+
+  --text: 16px;
+}
+
+*{
+  background-blend-mode: soft-light, normal;
+}
+
+
+
+/* Containers and Blocks */
+
+body{
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--text);
+  background: var(--bg-color);
+  margin: 0;
+  height: 3000px;
+}
+
+.block{
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  margin-top: var(--margin-top-main);
+}
+
+.label_container{
+  width: 300px;
+  margin: 0 auto;
+  min-height: 35px;
+  line-height: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container{
+  width: 300px;
+  margin: 0 auto;
+}
+
+.card{
+  border-radius: var(--border-radius);
+  min-height: 100px;
+  padding: var(--padding-main);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Text */
+
+h2, h4, h3{
+  margin: 0;
+  text-align: center;
+  color: var(--color-text);
+}
+
+h2{
+  font-size: 28px;
+}
+
+h4{
+  font-size: 18px;
+}
+
+h3{
+  font-size: 22px;
+}
+
+a{
+  text-decoration: none;
+  width: auto;
+  text-align: center;
+}
+
+.sbold{
+  font-weight: 600;
+}
+
+.medium{
+  font-weight: 500;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+
+/* INSTA LINK Branding */
+
+.label{
+  background: var(--main-gradient);
+  color: #fff;
+  width: 100%;
+}
+
+.label_arrow{
+  width: 26px;
+}
+
+
+
+/* Elements */
+
+.button_main{
+  background-color: var(--color-accent);
+  padding: 13px 42px 14px 42px;
+  color: var(--color-button);
+  border-radius: var(--border-radius-button);
+}
+
+
+
+/* Card about me  */
+
+.card_about__block{
+  --margin-top-main: 30px;
+    margin-top: var(--margin-top-main);
+}
+
+.card_about{
+  background: #fff;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.avatar{
+  width: 130px;
+  height: 130px;
+  border-radius: 75px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: -4px;
+}
+
+.card_about > h2{
+  margin-top: 18px;
+  margin-bottom: 0;
+  display: block;
+}
+
+.card_about > h4{
+  margin-top: 6px;
+  margin-bottom: 0;
+  opacity: 0.7;
+  display: block;
+}
+
+.card_about > a{
+  display: inline-block;
+  margin-top: 25px;
+}
+
+
+
+/* Services */
+
+.services__block{
+  margin-top: var(--margin-top-main);
+}
+
+
+/*  Slider */
+
+.swiper-container {
+	width: 300px;
+	height: 185px;
+	border-radius: var(--border-radius);
+  margin-top: var(--margin-top-secondary);
+  overflow: visible !important;
+}
+
+.swiper-slide {
+	background: #fff;
+  border-radius: var(--border-radius);
+  display: flex;
+  /* transform-style: flat !important; */
+}
+
+
+.swiper-pagination{
+  bottom: -30px !important;
+  position: absolute;
+}
+
+.swipper_slider__inner{
+  padding: 20px;
+  padding-bottom: 25px;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.swipper_slider__inner::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-radius: var(--border-radius);
+  opacity: .3;
+  z-index: 0;
+}
+
+.services__h3{
+  color: #fff;
+  z-index: 1;
+  text-align: left
+}
+
+.services__h4{
+  color: #fff;
+  z-index: 1;
+  text-align: left;
+  margin-top: 7px;
+}
+
+.services__button{
+  z-index: 1;
+  background: #fff;
+  color: #000;
+  margin-top: auto;
+  /* transform: translateZ(30px); */
+}
+
+.services__button:first-child{
+  z-index: 1;
+  background: #fff;
+  color: #000;
+  margin-top: auto;
+  /* transform: translateZ(30px); */
+}
+
+
+.asd
